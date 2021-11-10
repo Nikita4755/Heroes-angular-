@@ -1,8 +1,29 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
+<!-- <ul class="heroes">
     <li *ngFor="let hero of heroes">
-        <a routerLink="/detail/{{hero.id}}">
+        <a mat-stroked-button routerLink="/detail/{{hero.id}}">
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </a>
     </li>
-</ul>
+</ul> -->
+<div ng-controller="HeroList">
+    <table>
+        <tr>
+            <th> No
+            </th>
+            <th>
+                Strength
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1 {{heroes.heroes }} -->
+            </td>
+            <td>
+                2
+                <!--   {{hero.strength}} -->
+            </td>
+        </tr>
+
+    </table>
+</div>

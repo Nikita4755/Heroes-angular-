@@ -12,18 +12,11 @@ input {
 
 button {
     margin-top: 20px;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
+    padding: 0;
+    margin-right: 2rem;
 }
 
-button:hover {
-    background-color: #cfd8dc;
-}
-
-button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
+.heroes-menu {
+    display: flex;
+    padding: 0;
 }

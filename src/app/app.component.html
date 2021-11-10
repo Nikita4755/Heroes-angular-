@@ -1,8 +1,7 @@
 <h1>{{title}}</h1>
 <nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
+    <a mat-stroked-button routerLink="/dashboard">Dashboard</a>
+    <a mat-stroked-button routerLink="/heroes">Heroes</a>
     <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
