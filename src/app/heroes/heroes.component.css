@@ -83,13 +83,16 @@ button.delete:hover {
 
 table {
     width: 100%;
-    border: 1px solid black;
+    height: 300px;
+    /*   border: 1px solid black; */
 }
 
+
+/* 
 tr {
     text-align: center;
 }
 
 td {
     text-align: center;
-}
+} */

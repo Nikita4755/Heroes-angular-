@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
-class Element {
+export interface Element {
   position: number;
   name: string;
   strength: number;
@@ -18,19 +18,22 @@ const ELEMENT_HEROES: Element[]=[
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  styleUrls: ['./heroes.component.css'],
+  /* heroes: any ='as' */
 })
+
 export class HeroesComponent implements OnInit {
-  displavedColumns: string[] = ['position','name','strength'];
+  displayedColumns: string[] = ['position','name','strength'];
   dataSource= ELEMENT_HEROES;
 
   constructor(private heroService: HeroService) { }
-
+  heroes: any ="";
   ngOnInit() {
     this.getHeroes();
   }
 
   getHeroes(): void {
+
     this.heroService.getHeroes()
     .subscribe(heroes => this.heroes = heroes);
   }
