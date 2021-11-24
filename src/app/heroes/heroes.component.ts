@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
+
 export interface Element {
   position: number;
   name: string;
@@ -10,10 +11,18 @@ export interface Element {
 }
 
 const ELEMENT_HEROES: Element[]=[
-  {position: 1, name: 'dc', strength: 4},
-  {position: 2, name: 'dc', strength: 4},
-  {position: 3, name: 'dc', strength: 4},
+  {position: 1, name: 'Dr Nice', strength: 3},
+  {position: 2, name: 'Narco', strength: 2},
+  {position: 3, name: 'Bombasto', strength: 3},
+  {position: 4, name: 'Celeritas', strength: 4},
+  {position: 5, name: 'Magneta', strength: 4},
+  {position: 6, name: 'RubberMan', strength: 5},
+  {position: 7, name: 'Dynama', strength: 1},
+  {position: 8, name: 'Dr IQ', strength: 3},
+  {position: 9, name: 'Magma', strength: 4},
+  {position: 10, name: 'Tornado', strength: 5},
 ];
+
 
 @Component({
   selector: 'app-heroes',
